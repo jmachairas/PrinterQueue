@@ -7,12 +7,16 @@ multiple Printers in a more sophisticated way in the future.
 
 Installing the Printer Queue
   git clone https://github.com/jmachairas/PrinterQueue.git
+  
   cd PrinterQueue
+  
   pip install django
+  
   pip install djangorestframework
   
 Initializing DB
   python manage.py makemigrations
+  
   python manage.py migrate
   
 Running the Server
@@ -54,4 +58,5 @@ Interacting with the Server
   
   Simulated Queue Job Deployment
       This simply prints the job names added to the Queue in correct executing order according to priority
+      
       http -a admin:password123 http://127.0.0.1:8000/deploy/
